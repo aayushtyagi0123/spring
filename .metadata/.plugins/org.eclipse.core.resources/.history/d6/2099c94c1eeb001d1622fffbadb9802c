@@ -1,0 +1,24 @@
+package productcrudApp.aspect.Controller;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Aspect
+public class aspectController {
+
+	
+	@Before("execution(* productcrudApp.Controller.ProductDao.*(..)")
+	public String registerpage()
+	{
+		return "Register_login";
+	}
+	
+	
+	
+	public String loginpage()
+	{
+		return "Register_login";
+	}
+	
+}

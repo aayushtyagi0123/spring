@@ -1,0 +1,19 @@
+package productcrudApp.aspect.Controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class aspectController {
+
+	
+	public String registerpage()
+	{
+		return "Register_login";
+	}
+	
+	
+	public String loginpage()
+	{
+		return "Register_login";
+	}
+	
+}

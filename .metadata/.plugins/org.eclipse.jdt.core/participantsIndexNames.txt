@@ -1,0 +1,15 @@
+INDEX VERSION 1.131
+F:\springproject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1984320015.index
+\productcrudApp\src\main\resources
+F:\springproject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3508397710.index
+\redirectproject\src\main\resources
+F:\springproject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\221608644.index
+\redirectproject\src\main\java
+F:\springproject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\875567494.index
+\ToDoApp\src\main\java
+F:\springproject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\915913144.index
+\productcrudApp\src\main\java
+F:\springproject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\77923112.index
+\ToDoApp\src\main\java
+F:\springproject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3949608377.index
+\redirectproject\src\main\java

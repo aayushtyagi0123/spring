@@ -1,0 +1,23 @@
+package redirectproject.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+public class fileUploadController {
+
+	@RequestMapping("/fileupload")
+	public String showpage()
+	{
+		return "fileupload";
+	}
+	
+	
+	@RequestMapping(path="/upload",method=RequestMethod.POST)
+	public void uploading(@RequestParam(""))
+	{
+		
+	}
+	
+}

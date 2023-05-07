@@ -1,0 +1,29 @@
+package productcrudApp.aspect.Controller;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import productcrudApp.Controller.ProductController;
+
+@Aspect
+public class aspectController {
+
+	@Autowired
+	ProductController pcont;
+	
+	@Before("execution(* productcrudApp.Controller.ProductDao.*(..)")
+	public void registerpage()
+	{
+		this.pcont.register();
+	}
+	
+	
+	
+	public String loginpage()
+	{
+		return "Register_login";
+	}
+	
+}

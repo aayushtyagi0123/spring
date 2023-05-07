@@ -1,0 +1,5 @@
+package productcrudApp.Model;
+
+public class Product {
+
+}
