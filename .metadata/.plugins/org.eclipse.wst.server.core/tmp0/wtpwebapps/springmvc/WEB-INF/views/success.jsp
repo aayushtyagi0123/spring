@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+ <%@ page isELIgnored="false" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1 class="text-center">${Header}</h1>
+Saved data have id:<h1>${id}</h1>
+Name:<h1>${user.username}</h1>
+Email:<h1>${user.email}</h1>
+Password:<h2>${user.password}</h2>
+</body>
+</html>

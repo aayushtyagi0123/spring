@@ -1,0 +1,69 @@
+package com.spring.orm.springorm;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.spring.orm.springorm.dao.studentDao;
+import com.spring.orm.springorm.entities.student;
+
+/**
+ * Hello world!
+ *
+ */
+public class App {
+	public static void main(String[] args) {
+		ApplicationContext context = new ClassPathXmlApplicationContext("com/spring/orm/springorm/config.xml");
+
+		studentDao studentdao = context.getBean("studentdao", studentDao.class);
+
+		/*student s1 = new student(123, "sonam", "saharanpur");
+		int r = studentdao.insert(s1);
+		System.out.println("No of row inserted " + r);*/
+		
+	BufferedReader br=new BufferedReader(new InputStreamReader(System.in));	
+		boolean go=true;
+		while(go) {
+			
+		
+			
+		System.out.println("PRESS 1 for insert student");
+		System.out.println("PRESS 2 for get single student");
+		System.out.println("PRESS 3 for get all student");
+		System.out.println("PRESS 4 for delete student");
+		System.out.println("PRESS 5 for update student");
+		System.out.println("PRESS 6 for exit");
+		
+		try {
+			int input=Integer.parseInt(br.readLine());
+			switch(input)
+			{
+			case 1://insert data
+				break;
+				
+			case 2://get single row
+				break;
+				
+			case 3://get all record
+				break;
+				
+			case 4://delete record
+				break;
+			case 5://update record
+				break;
+			case 6://exit
+		           go=false;
+				
+			}
+		}
+		catch(Exception e)
+		{
+			System.out.println("Invalid input,try with another one!");
+			System.out.println(e.getMessage());
+		}
+		
+		}
+	}
+}

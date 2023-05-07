@@ -1,0 +1,19 @@
+package com.spring.orm.springorm.dao;
+
+
+
+import org.springframework.orm.hibernate3.HibernateTemplate;
+
+import com.spring.orm.springorm.entities.student;
+
+public class studentDao {
+
+	
+	private HibernateTemplate hibernatetemplate;
+
+	public int insert(student s1)
+	{
+		this.hibernatetemplate
+	}
+
+}

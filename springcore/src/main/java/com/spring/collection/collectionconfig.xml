@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean class="com.springcore.springcore.Student" name="student1" p:studentId="12345" p:studentName="Aayush"
+p:studentAddress="sre"/>
+
+<bean class="com.spring.collection.Emp" name="Emp1">
+<property name="name" value="Aayush"/>
+<property name="phones">
+<list>
+<value>1234</value>
+<value>5678</value>
+</list>
+</property>
+<property name="address">
+<set>
+<value>sre</value>
+<value>mujaffarnagar</value>
+</set>
+</property>
+<property name="courses">
+<map>
+<entry key="javaa" value="1month"></entry>
+<entry key="python" value="2month" ></entry>
+</map>
+</property>
+<property name="props">
+<props>
+<prop key="username">Aayush</prop>
+<prop key="password">aayu123</prop>
+</props>
+</property>
+</bean>
+</beans>
